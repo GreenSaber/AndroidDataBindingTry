@@ -19,9 +19,8 @@ class ViewModel(application: Application) : AndroidViewModel(application) {
         liveDataCount.postValue(count.toString())
     }
 
-    fun getLiveDataCount(): LiveData<String> {
-        return liveDataCount
-    }
+    fun getLiveDataCount(): LiveData<String> = liveDataCount
+
 
 }
 
